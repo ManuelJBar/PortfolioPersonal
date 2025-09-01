@@ -1,0 +1,50 @@
+# Create a minimal, working portfolio project with responsive menu and cookies popup
+import os, textwrap, zipfile, json, pathlib
+
+base = "/mnt/data/portfolio_web_practica"
+os.makedirs(base, exist_ok=True)
+assets_dir = os.path.join(base, "assets", "img")
+fonts_dir = os.path.join(base, "assets", "fonts")
+os.makedirs(assets_dir, exist_ok=True)
+os.makedirs(fonts_dir, exist_ok=True)
+
+index_html = """<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio – Manuel Barrachina</title>
+  <meta name="description" content="Portfolio personal de Manuel Barrachina: proyectos, CV y contacto." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#">MB</a>
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#cv">CV</a>
+      <a href="#contacto">Contacto</a>
+      <a href="privacy.html">Privacidad</a>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-inner">
+        <h1>Hola, soy <span class="accent">Manuel Barrachina</span></h1>
+        <p>Profesional de banca y finanzas con más de 20 años de experiencia. Aquí encontrarás una selección de mis proyectos, un resumen de mi experiencia y cómo contactar conmigo.</p>
+        <a class="btn" href="#proyectos">Ver proyectos</a>
+      </div>
+      <img class="hero-img" alt="Ilustración de portafolio" src="https://placehold.co/640x400/png" />
+    </section>
+    </body>
+</html>
+"""
