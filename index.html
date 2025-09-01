@@ -4,7 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portfolio – Manuel Barrachina</title>
+  <meta name="description" content="Portfolio personal de Manuel Barrachina: proyectos, CV y contacto." />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>">
   <script defer src="script.js"></script>
 </head>
 <body>
@@ -13,31 +15,114 @@
     <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
       <span class="bar"></span><span class="bar"></span><span class="bar"></span>
     </button>
-    <nav class="site-nav" id="site-nav">
-      <a href="#inicio">Inicio</a><a href="#proyectos">Proyectos</a>
-      <a href="#cv">CV</a><a href="#contacto">Contacto</a><a href="privacy.html">Privacidad</a>
+    <nav class="site-nav" id="site-nav" aria-label="Principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#cv">CV</a>
+      <a href="#contacto">Contacto</a>
+      <a href="privacy.html">Privacidad</a>
     </nav>
   </header>
 
   <main id="inicio">
+    <!-- Hero -->
     <section class="hero">
       <div class="hero-inner">
         <h1>Hola, soy <span class="accent">Manuel Barrachina</span></h1>
-        <p>Profesional de banca y finanzas con más de 20 años de experiencia.</p>
+        <p>Profesional de banca y finanzas con más de 20 años de experiencia. Aquí encontrarás una selección de mis proyectos, un resumen de mi experiencia y cómo contactar conmigo.</p>
         <a class="btn" href="#proyectos">Ver proyectos</a>
       </div>
-      <img class="hero-img" alt="Ilustración" src="https://placehold.co/640x400/png" />
+      <img class="hero-img" alt="Ilustración de portafolio" src="https://placehold.co/640x400/png" />
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="section">
+      <h2>Proyectos</h2>
+      <div class="grid projects">
+        <article class="card">
+          <img alt="Proyecto 1" src="https://placehold.co/600x360/png" />
+          <div class="card-body">
+            <h3>Proyecto 1: Dashboard de Inversiones</h3>
+            <p>KPIs para gestión patrimonial. Visualizaciones y alertas.</p>
+            <p class="tags">HTML • CSS • JS • Power BI</p>
+          </div>
+        </article>
+        <article class="card">
+          <img alt="Proyecto 2" src="https://placehold.co/600x360/png" />
+          <div class="card-body">
+            <h3>Proyecto 2: Landing de Mundo Expert</h3>
+            <p>Responsive orientado a conversión y captación de leads.</p>
+            <p class="tags">HTML • CSS • Bootstrap</p>
+          </div>
+        </article>
+        <article class="card">
+          <img alt="Proyecto 3" src="https://placehold.co/600x360/png" />
+          <div class="card-body">
+            <h3>Proyecto 3: Blog Financiero</h3>
+            <p>Artículos sobre fiscalidad internacional y gestión de activos.</p>
+            <p class="tags">HTML • CSS</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CV -->
+    <section id="cv" class="section">
+      <h2>CV resumido</h2>
+      <div class="grid two">
+        <div>
+          <h3>Experiencia</h3>
+          <ul class="list">
+            <li><strong>Wealth Manager Senior</strong> – Mundo Expert (Panamá)</li>
+            <li><strong>Back Office</strong> – Entidad bancaria (AVOS TECH)</li>
+            <li><strong>Executioner Trader</strong> – Mercados financieros</li>
+          </ul>
+          <h3>Formación</h3>
+          <ul class="list">
+            <li>Executive MBA</li>
+            <li>EFA, Experto Contable, Licencia de Analista (Panamá)</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Habilidades</h3>
+          <ul class="list">
+            <li>Estructuración offshore y wealth management</li>
+            <li>Fiscalidad internacional y compliance</li>
+            <li>Bloomberg, ERP/SAP, Power BI</li>
+            <li>ES/EN/FR</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section">
+      <h2>Contacto</h2>
+      <p>¿Hablamos? Escríbeme por correo o completa el formulario.</p>
+      <div class="grid two">
+        <div>
+          <p><strong>Email:</strong> <a href="mailto:manuel@example.com">manuel@example.com</a></p>
+        </div>
+        <form class="contact-form" netlify>
+          <label>Nombre <input required name="nombre" type="text" /></label>
+          <label>Email <input required name="email" type="email" /></label>
+          <label>Mensaje <textarea required name="mensaje" rows="5"></textarea></label>
+          <button class="btn" type="submit">Enviar</button>
+        </form>
+      </div>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <p>© <span id="year"></span> Manuel Barrachina · <a href="privacy.html">Política de privacidad</a></p>
   </footer>
 
-  <!-- Cookies (obligatorio) -->
+  <!-- Popup de cookies -->
   <div class="cookies" id="cookies" role="dialog" aria-live="polite" aria-modal="true">
-    <p>Este sitio usa cookies técnicas. <a href="privacy.html">Más info</a>.</p>
+    <p>Este sitio usa cookies técnicas para mejorar la experiencia. <a href="privacy.html">Más info</a>.</p>
     <button id="acceptCookies" class="btn small">Aceptar</button>
   </div>
 </body>
 </html>
+
