@@ -1,25 +1,21 @@
-// Menú móvil
-document.getElementById("menu-toggle").addEventListener("click", () => {
-  document.getElementById("menu").classList.toggle("hidden");
+// Menú responsive
+const menuBtn = document.querySelector('.menu-toggle');
+const nav = document.getElementById('site-nav');
+menuBtn?.addEventListener('click', () => {
+  const open = nav.classList.toggle('open');
+  menuBtn.setAttribute('aria-expanded', String(open));
 });
 
-// Validación de formulario
-document.getElementById("formulario").addEventListener("submit", function (e) {
-  const nombre = document.getElementById("nombre").value.trim();
-  const email = document.getElementById("email").value.trim();
+// Año footer
+document.getElementById('year')?.append(new Date().getFullYear());
 
-  if (!nombre || !email.includes("@")) {
-    alert("Por favor, completa los campos correctamente.");
-    e.preventDefault();
-  }
-});
-
-// Animación al hacer scroll
-window.addEventListener("scroll", () => {
-  document.querySelectorAll(".proyecto").forEach((el) => {
-    if (el.getBoundingClientRect().top < window.innerHeight) {
-      el.style.opacity = 1;
-      el.style.transform = "translateY(0)";
-    }
+// Cookies
+const cookies = document.getElementById('cookies');
+const accept = document.getElementById('acceptCookies');
+if (cookies && accept) {
+  if (!localStorage.getItem('cookieConsent')) cookies.classList.add('show');
+  accept.addEventListener('click', () => {
+    localStorage.setItem('cookieConsent','accepted');
+    cookies.classList.remove('show');
   });
-});
+}
