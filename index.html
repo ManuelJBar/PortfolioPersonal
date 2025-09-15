@@ -3,121 +3,94 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portfolio – Manuel Barrachina</title>
-  <meta name="description" content="Portfolio profesional de Manuel Barrachina: proyectos, experiencia y contacto." />
+  <title>Manuel Barrachina – Portfolio Profesional</title>
+  <meta name="description" content="Portfolio de Manuel Barrachina: proyectos financieros, experiencia y contacto." />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>">
+  <link rel="icon" href="favicon.svg" />
   <script defer src="script.js"></script>
 </head>
 <body>
   <header class="site-header">
-    <a class="logo" href="#inicio" aria-label="Inicio">MB</a>
-    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
-      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-    </button>
-    <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
+    <nav aria-label="Navegación principal">
+      <a class="logo" href="#inicio">MB</a>
+      <ul class="nav-links">
         <li><a href="#proyectos">Proyectos</a></li>
         <li><a href="#cv">CV</a></li>
         <li><a href="#contacto">Contacto</a></li>
-        <li><a href="privacy.html">Privacidad</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <!-- Hero -->
     <section id="inicio" class="hero">
-      <div class="hero-inner">
-        <h1>Hola, soy <span class="accent">Manuel Barrachina</span></h1>
-        <p>Profesional en banca y finanzas con más de 20 años de experiencia. Aquí encontrarás mis proyectos, trayectoria y cómo contactar conmigo.</p>
-        <a class="btn" href="#proyectos">Ver proyectos</a>
+      <div class="hero-content">
+        <h1>Hola, soy <span class="highlight">Manuel Barrachina</span></h1>
+        <p>Especialista en banca privada y fiscalidad internacional. Aquí comparto mis proyectos, experiencia y formas de contacto.</p>
+        <a href="#proyectos" class="btn">Explorar proyectos</a>
       </div>
-      <img class="hero-img" src="https://placehold.co/640x400/png" alt="Ilustración de portafolio" />
     </section>
 
-    <!-- Proyectos -->
-    <section id="proyectos" class="section">
+    <section id="proyectos" class="projects">
       <h2>Proyectos destacados</h2>
-      <div class="grid projects">
+      <div class="card-grid">
         <article class="card">
-          <img src="img/dashboard-inversiones.jpg" alt="Dashboard de inversiones" />
-          <div class="card-body">
-            <h3>Dashboard de Inversiones</h3>
-            <p>KPIs para gestión patrimonial. Visualizaciones y alertas.</p>
-            <p class="tags">HTML • CSS • JS • Power BI</p>
-          </div>
+          <img src="img/dashboard-inversiones.webp" alt="Dashboard de inversiones con KPIs financieros" />
+          <h3>Dashboard de Inversiones</h3>
+          <p>KPIs para gestión patrimonial con visualizaciones interactivas.</p>
+          <span class="tags">Power BI • HTML • CSS • JS</span>
         </article>
         <article class="card">
-          <img src="https://placehold.co/600x360/png" alt="Landing Mundo Expert" />
-          <div class="card-body">
-            <h3>Landing Mundo Expert</h3>
-            <p>Diseño responsive orientado a conversión y captación de leads.</p>
-            <p class="tags">HTML • CSS • Bootstrap</p>
-          </div>
+          <img src="img/landing.webp" alt="Landing Mundo Expert" />
+          <h3>Landing Mundo Expert</h3>
+          <p>Diseño responsive orientado a conversión y captación de leads.</p>
+          <span class="tags">HTML • CSS • Bootstrap</span>
         </article>
         <article class="card">
-          <img src="https://placehold.co/600x360/png" alt="Blog Financiero" />
-          <div class="card-body">
-            <h3>Blog Financiero</h3>
-            <p>Artículos sobre fiscalidad internacional y gestión de activos.</p>
-            <p class="tags">HTML • CSS</p>
-          </div>
+          <img src="img/blog.webp" alt="Blog Financiero" />
+          <h3>Blog Financiero</h3>
+          <p>Artículos sobre fiscalidad internacional y gestión de activos.</p>
+          <span class="tags">HTML • CSS</span>
         </article>
       </div>
     </section>
 
-    <!-- CV -->
-    <section id="cv" class="section">
-      <h2>Currículum resumido</h2>
-      <div class="grid two">
+    <section id="cv" class="cv">
+      <h2>Currículum</h2>
+      <div class="cv-grid">
         <div>
-          <h3>Experiencia profesional</h3>
-          <ul class="list">
-            <li><strong>Wealth Manager Senior</strong> – Mundo Expert (Panamá)</li>
+          <h3>Experiencia</h3>
+          <ul>
+            <li><strong>Wealth Manager</strong> – Mundo Expert (Panamá)</li>
             <li><strong>Back Office</strong> – AVOS TECH</li>
             <li><strong>Executioner Trader</strong> – Mercados financieros</li>
-          </ul>
-          <h3>Formación académica</h3>
-          <ul class="list">
-            <li>Executive MBA</li>
-            <li>EFA, Experto Contable, Licencia de Analista (Panamá)</li>
           </ul>
         </div>
         <div>
           <h3>Habilidades</h3>
-          <ul class="list">
-            <li>Estructuración offshore y wealth management</li>
+          <ul>
             <li>Fiscalidad internacional y compliance</li>
-            <li>Bloomberg, ERP/SAP, Power BI</li>
+            <li>Estructuración offshore y wealth management</li>
+            <li>Bloomberg, SAP, Power BI</li>
             <li>Idiomas: Español, Inglés, Francés</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- Contacto -->
-    <section id="contacto" class="section">
+    <section id="contacto" class="contact">
       <h2>Contacto</h2>
-      <p>¿Hablamos? Puedes escribirme por correo o completar el formulario.</p>
-      <div class="grid two">
-        <div>
-          <p><strong>Email:</strong> <a href="mailto:manuel@example.com">manuel@example.com</a></p>
-        </div>
-        <form name="contacto" method="POST" data-netlify="true">
-          <input type="hidden" name="form-name" value="contacto" />
-          <label>Nombre <input required name="nombre" type="text" /></label>
-          <label>Email <input required name="email" type="email" /></label>
-          <label>Mensaje <textarea required name="mensaje" rows="5"></textarea></label>
-          <button class="btn" type="submit">Enviar</button>
-        </form>
-      </div>
+      <form name="contacto" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contacto" />
+        <label>Nombre <input type="text" name="nombre" required /></label>
+        <label>Email <input type="email" name="email" required /></label>
+        <label>Mensaje <textarea name="mensaje" rows="5" required></textarea></label>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <p>© <span id="year"></span> Manuel Barrachina · <a href="privacy.html">Política de privacidad</a></p>
+  <footer>
+    <p>© <span id="year"></span> Manuel Barrachina · <a href="privacy.html">Privacidad</a></p>
   </footer>
 
   <div class="cookies" id="cookies" role="dialog" aria-live="polite" aria-modal="true">
