@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Manuel Barrachina – Portfolio Profesional</title>
-  <meta name="description" content="Portfolio de Manuel Barrachina: proyectos financieros, experiencia y contacto." />
+  <meta name="description" content="Portfolio de Manuel Barrachina: banca privada, fiscalidad internacional y visualización financiera." />
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="favicon.svg" />
   <script defer src="script.js"></script>
@@ -15,8 +15,9 @@
       <a class="logo" href="#inicio">MB</a>
       <ul class="nav-links">
         <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#cv">CV</a></li>
+        <li><a href="#cv">Currículum</a></li>
         <li><a href="#contacto">Contacto</a></li>
+        <li><a href="index-en.html">English</a></li>
       </ul>
     </nav>
   </header>
@@ -34,24 +35,33 @@
       <h2>Proyectos destacados</h2>
       <div class="card-grid">
         <article class="card">
-          <img src="img/dashboard-inversiones.webp" alt="Dashboard de inversiones con KPIs financieros" />
+          <img src="img/dashboard-inversiones.webp" alt="Dashboard financiero en Excel con KPIs patrimoniales" />
           <h3>Dashboard de Inversiones</h3>
-          <p>KPIs para gestión patrimonial con visualizaciones interactivas.</p>
-          <span class="tags">Power BI • HTML • CSS • JS</span>
+          <p>Panel en Excel con filtros por mes y departamento. KPIs de activos, pasivos, tesorería y resultado neto.</p>
+          <span class="tags">Excel • Finanzas • Visualización • KPIs</span>
         </article>
+
         <article class="card">
-          <img src="img/landing.webp" alt="Landing Mundo Expert" />
+          <img src="img/OIP.webp" alt="Landing Mundo Expert – Diseño responsive orientado a conversión" />
           <h3>Landing Mundo Expert</h3>
           <p>Diseño responsive orientado a conversión y captación de leads.</p>
           <span class="tags">HTML • CSS • Bootstrap</span>
         </article>
+
         <article class="card">
-          <img src="img/blog.webp" alt="Blog Financiero" />
+          <img src="img/blog.webp" alt="Blog financiero sobre fiscalidad internacional" />
           <h3>Blog Financiero</h3>
-          <p>Artículos sobre fiscalidad internacional y gestión de activos.</p>
-          <span class="tags">HTML • CSS</span>
+          <p>Artículos sobre fiscalidad internacional y gestión patrimonial. Enfoque técnico y estratégico para inversores globales.</p>
+          <span class="tags">HTML • CSS • Contenido Financiero</span>
         </article>
       </div>
+    </section>
+
+    <section id="embudo" class="embudo">
+      <h2>Embudo de captación de leads</h2>
+      <p>Diseño responsive orientado a conversión y captación de leads. Utiliza tráfico digital para dirigir a una landing page, seguida de una página de agradecimiento y entrega de contenido vía email.</p>
+      <img src="img/OIP.webp" alt="Embudo de captación de leads" style="max-width:100%; height:auto; border-radius:8px; margin-top:1em;" />
+      <p style="text-align:center; font-style:italic; margin-top:0.5em;">HTML • CSS • Bootstrap</p>
     </section>
 
     <section id="cv" class="cv">
@@ -62,14 +72,14 @@
           <ul>
             <li><strong>Wealth Manager</strong> – Mundo Expert (Panamá)</li>
             <li><strong>Back Office</strong> – AVOS TECH</li>
-            <li><strong>Executioner Trader</strong> – Mercados financieros</li>
+            <li><strong>Trader de ejecución</strong> – Mercados financieros</li>
           </ul>
         </div>
         <div>
-          <h3>Habilidades</h3>
+          <h3>Competencias</h3>
           <ul>
-            <li>Fiscalidad internacional y compliance</li>
-            <li>Estructuración offshore y wealth management</li>
+            <li>Fiscalidad internacional y cumplimiento</li>
+            <li>Estructuración offshore y gestión patrimonial</li>
             <li>Bloomberg, SAP, Power BI</li>
             <li>Idiomas: Español, Inglés, Francés</li>
           </ul>
@@ -81,20 +91,20 @@
       <h2>Contacto</h2>
       <form name="contacto" method="POST" data-netlify="true">
         <input type="hidden" name="form-name" value="contacto" />
-        <label>Nombre <input type="text" name="nombre" required /></label>
+        <label>Nombre <input type="text" name="name" required /></label>
         <label>Email <input type="email" name="email" required /></label>
-        <label>Mensaje <textarea name="mensaje" rows="5" required></textarea></label>
-        <button type="submit" class="btn">Enviar</button>
+        <label>Mensaje <textarea name="message" rows="5" required></textarea></label>
+        <button type="submit" class="btn">Enviar mensaje</button>
       </form>
     </section>
   </main>
 
   <footer>
-    <p>© <span id="year"></span> Manuel Barrachina · <a href="privacy.html">Privacidad</a></p>
+    <p>© <span id="year"></span> Manuel Barrachina · <a href="privacy.html">Política de privacidad</a></p>
   </footer>
 
   <div class="cookies" id="cookies" role="dialog" aria-live="polite" aria-modal="true">
-    <p>Este sitio usa cookies técnicas para mejorar la experiencia. <a href="privacy.html">Más info</a>.</p>
+    <p>Este sitio utiliza cookies técnicas para mejorar tu experiencia. <a href="privacy.html">Saber más</a>.</p>
     <button id="acceptCookies" class="btn small">Aceptar</button>
   </div>
 </body>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Manuel Barrachina – Professional Portfolio</title>
+  <meta name="description" content="Portfolio of Manuel Barrachina: private banking, international taxation, and financial visualization." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.svg" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav aria-label="Main navigation">
+      <a class="logo" href="#home">MB</a>
+      <ul class="nav-links">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="index.html">Español</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Hello, I'm <span class="highlight">Manuel Barrachina</span></h1>
+        <p>Specialist in private banking and international taxation. Here I share my key projects, professional background, and contact information.</p>
+        <a href="#projects" class="btn">Explore Projects</a>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2>Featured Projects</h2>
+      <div class="card-grid">
+        <article class="card">
+          <img src="img/dashboard-inversiones.webp" alt="Excel dashboard with KPIs for assets, liabilities, and results" />
+          <h3>Investment Dashboard</h3>
+          <p>Excel-based dashboard with filters by month and department. Includes KPIs for assets, liabilities, treasury, and net results.</p>
+          <span class="tags">Excel • Finance • Visualization • KPIs</span>
+        </article>
+
+        <article class="card">
+          <img src="img/dashboard-powerbi.webp" alt="Power BI dashboard with key financial metrics" />
+          <h3>KPI Dashboard – Power BI</h3>
+          <p>Interactive panel with filters by year, month, and company. Tracks revenue, profitability, liquidity, and financial simulations.</p>
+          <span class="tags">Power BI • Corporate Finance • BI • KPIs</span>
+        </article>
+
+        <article class="card">
+          <img src="img/blog.webp" alt="Financial blog focused on international taxation" />
+          <h3>Financial Blog</h3>
+          <p>Articles on international taxation and asset management. Technical and strategic insights for global investors.</p>
+          <span class="tags">HTML • CSS • Financial Content</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="funnel" class="embudo">
+      <h2>Lead Capture Funnel</h2>
+      <p>Responsive design focused on conversion and lead generation. It uses digital traffic to direct users to a landing page, followed by a thank-you page and email delivery of content.</p>
+      <img src="img/OIP.webp" alt="Lead capture funnel diagram" style="max-width:100%; height:auto; border-radius:8px; margin-top:1em;" />
+      <p style="text-align:center; font-style:italic; margin-top:0.5em;">HTML • CSS • Bootstrap</p>
+    </section>
+
+    <section id="resume" class="cv">
+      <h2>Resume</h2>
+      <div class="cv-grid">
+        <div>
+          <h3>Experience</h3>
+          <ul>
+            <li><strong>Wealth Manager</strong> – Mundo Expert (Panama)</li>
+            <li><strong>Back Office</strong> – AVOS TECH</li>
+            <li><strong>Execution Trader</strong> – Financial Markets</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Skills</h3>
+          <ul>
+            <li>International taxation and compliance</li>
+            <li>Offshore structuring and wealth management</li>
+            <li>Bloomberg, SAP, Power BI</li>
+            <li>Languages: Spanish, English, French</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <form name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact" />
+        <label>Name <input type="text" name="name" required /></label>
+        <label>Email <input type="email" name="email" required /></label>
+        <label>Message <textarea name="message" rows="5" required></textarea></label>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Manuel Barrachina · <a href="privacy-en.html">Privacy Policy</a></p>
+  </footer>
+
+  <div class="cookies" id="cookies" role="dialog" aria-live="polite" aria-modal="true">
+    <p>This site uses technical cookies to improve your experience. <a href="privacy-en.html">Learn more</a>.</p>
+    <button id="acceptCookies" class="btn small">Accept</button>
+  </div>
+</body>
+</html>
